@@ -17,13 +17,17 @@
 <!--Empieza el contenido de la web-->
     <body class="full">
     <header class="header"> 
-        <div class="nav wrapper animated fadeIn delay-1s">
-            <!-- <div class="logo"><a href="#">SOFIA DEZAKI<a href="#"></div> -->
+        <div class="nav wrapper">
             <a href="index.html"><img class="logo" src="img/logo-sofiadezaki.svg" alt="logotipo Sofia Dezaki"/></a>
+                        
             <div class="menu">
-                <h6><a href="#cv">cv</a></h6>
-                <h6><a href="#about">about</a></h6>
-                <h6><a href="mailto:sofiadezaki@gmail.com">contact</a></h6>
+            <h6><a target="_blank" href="mailto:sofiadezaki@gmail.com">contact</a></h6>
+            </div>
+            
+            <div class="navigation">
+            <h6 id="cv-b"><a>cv</a></h6>
+            <h6 class="about"><a>about</a></h6>
+            <h6><a target="_blank" href="mailto:sofiadezaki@gmail.com">contact</a></h6>
             </div>
         </div>
     </header>
@@ -31,38 +35,41 @@
     <main> 
     <div class="wrapper">   
         <div class="back-home">    
-        <a href="index.html"><span class="overline-text weight-400">< Back to home</span></a>  
+            <a href="index.html"><span class="overline-text weight-400">< Back to home</span></a>  
         </div> 
-
-        <div class="single-project flex">
-                <div class="info-project animated fadeIn" data-aos="fade-right">
-                        <h6 style="color:#5BE3C2">BRANDING</h6>
-                        <h3>Cosmic Gyals</h3>
-                        <p class="color-pink">Brand identity and brand communication for an astral advice channel.</p>
-                        </div>
-
-            <img class="p" src="img/projects/cosmic-01.jpg" alt="Cosmic Gyal Logo" data-aos="fade-left">
-            <img class="p" src="img/projects/cosmic-02.jpg" alt="Bad Witch design" data-aos="fade-left">
-            <img class="p" src="img/projects/cosmic-03.jpg" alt="Good Witch design" data-aos="fade-left">
-            <img class="p" src="img/projects/cosmic-04.jpg" alt="Sagitario design" data-aos="fade-left">
-            <img class="p" src="img/projects/cosmic-05.jpg" alt="Tauro design" data-aos="fade-left">
-
-            <a href="project-lettering.html">
-            <div class="secondary next overline-text weight-400">
-            <div class="margin">
-                Next project 
-                <span class="icon">
-                    <svg  width="23" height="6" viewBox="0 0 23 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0354 3.08864C22.0716 2.91093 22.0198 2.72646 21.8969 2.59503L19.6198 0.18269C19.486 0.0324453 19.2826 -0.0317786 19.0888 0.0150571C18.895 0.0618928 18.7416 0.212374 18.6884 0.407832C18.6351 0.603291 18.6904 0.812785 18.8328 0.95464L20.221 2.43916H0.546509C0.244674 2.43916 -1.14971e-05 2.6884 -1.14971e-05 2.99586C-1.14971e-05 3.30331 0.244674 3.55255 0.546509 3.55255H20.2902L18.7563 4.98511C18.5812 5.10822 18.4921 5.32365 18.528 5.53727C18.564 5.75089 18.7183 5.92385 18.9237 5.98057C19.129 6.0373 19.348 5.96746 19.485 5.8016L21.8532 3.57482C21.9908 3.4546 22.0594 3.27166 22.0354 3.08864Z" fill="#ED7575"/>
-                    </svg>
-                </span>  
+            
+        <div class="info-container">
+            <div class="info-project animated fadeIn" data-aos="fade-right">
+                <h6 style="color:#5BE3C2">BRANDING</h6>
+                <h3>Cosmic Gyals</h3>
+                <p class="color-pink">Brand identity and brand communication for an astral advice channel.</p>
             </div>
-            </div>
-            </a>
+            
         </div>
-
+            
+        <div class="single-project">
+            <div class="fotos-container flex">
+                <div class="rectangulo" data-aos="fade-left"></div>
+                <img class="p" src="img/projects/cosmic-01.jpg" alt="Cosmic Gyal Logo" data-aos="fade-left">
+                <img class="p" src="img/projects/cosmic-02.jpg" alt="Bad Witch design" data-aos="fade-left">
+                <img class="p" src="img/projects/cosmic-03.jpg" alt="Good Witch design" data-aos="fade-left">
+                <img class="p" src="img/projects/cosmic-04.jpg" alt="Sagitario design" data-aos="fade-left">
+                <img class="p" src="img/projects/cosmic-05.jpg" alt="Tauro design" data-aos="fade-left">
+                            
+                <a href="project-lettering.html">
+                                <div class="secondary next overline-text weight-400">
+                                    <span> Next project 
+                                    <span class="icon">
+                                    <svg  width="23" height="6" viewBox="0 0 23 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0354 3.08864C22.0716 2.91093 22.0198 2.72646 21.8969 2.59503L19.6198 0.18269C19.486 0.0324453 19.2826 -0.0317786 19.0888 0.0150571C18.895 0.0618928 18.7416 0.212374 18.6884 0.407832C18.6351 0.603291 18.6904 0.812785 18.8328 0.95464L20.221 2.43916H0.546509C0.244674 2.43916 -1.14971e-05 2.6884 -1.14971e-05 2.99586C-1.14971e-05 3.30331 0.244674 3.55255 0.546509 3.55255H20.2902L18.7563 4.98511C18.5812 5.10822 18.4921 5.32365 18.528 5.53727C18.564 5.75089 18.7183 5.92385 18.9237 5.98057C19.129 6.0373 19.348 5.96746 19.485 5.8016L21.8532 3.57482C21.9908 3.4546 22.0594 3.27166 22.0354 3.08864Z" fill="rgb(175, 175, 175)"/>
+                                    </svg>
+                                    </span>  
+                                    </span>
+                                </div>
+                </a>
+            </div> 
+        </div> 
     </div> 
-
 
     <div class="rrss-sidebar wrapper animated fadeIn delay-1s">
             <div class="flex">
@@ -74,6 +81,27 @@
 
             </div>
     </div>
+
+    <section class="marquee__project">
+            <a target="_blank" href="mailto:sofiadezaki@gmail.com">
+            <div class="marquee__content">
+                <div class="marquee__message">
+                    click here to contact me
+                    <span class="dark-pink">click here to contact me</span>
+                    <span>click here to contact me</span>
+                    <span class="dark-pink">click here to contact me</span>
+                    <span>click here to contact me</span>
+                    <span class="dark-pink">click here to contact me</span>
+                    <span>click here to contact me</span>
+                    <span class="dark-pink">click here to contact me</span>
+                    <span>click here to contact me</span>
+                    <span class="dark-pink">click here to contact me</span>
+                    <span>click here to contact me</span>
+                    <span class="dark-pink">click here to contact me</span>
+                </div>
+            </div>
+            </a>
+    </section>
 
     </main>
 
