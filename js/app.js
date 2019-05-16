@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 1200,
+  })
+  
 $('document').ready(function(){
 
     console.log('ready');
