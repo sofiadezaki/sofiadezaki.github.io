@@ -903,17 +903,19 @@ footer{
         width:64vw;
         margin:2em 0;
     }
-    
     .cv-container{
+        position:relative;
+        left:-100%;
+    }
+
+    .cv-content .secondary{
+        margin-bottom:4em;
+    }
+
+    .cv-container .wrapper{
         display:block;
-    }
-    .cv-content{
-        width:80vw;
-    }
-    .cv-container li {
-        font-size:30px;
-        margin-left:1em;
-        color:
+        padding:1em;
+        width:90vw;
     }
 
     .footer-content{
@@ -993,8 +995,6 @@ footer{
     .next{
         border-radius: 6em;
     }
-
-    .
 
 
 }
