@@ -1,5 +1,3 @@
-# sofiadezaki.github.io
-
 La pagina se compone de: 
 - Header: con accesos directos a secciones como 'cv', 'about' y 'contact'.
 - Billboard: con un mensaje principal de bienvenida presentandome. 
