@@ -118,9 +118,13 @@ span{
 .back-home{
     width:20%;
     margin-top:4em;
-    z-index:0;
+    z-index:1;
     padding:2em 0;
     position:fixed;
+}
+
+.back-home .overline-text{
+    color:#0F1636;
 }
 
 .billboard {
@@ -214,14 +218,11 @@ span{
 .info-container{
     z-index:-1;
     position:relative;
-    width:22%;    
     margin-top:9em;
+    padding:1em;
+    width:24vw;
 }
 
-.fotos-container{
-    position:relative;
-    left:24%;
-}
 
 .left-half{
     background-color:#0F1636;
@@ -325,11 +326,8 @@ span{
 }
 
 .p{
-    width:40%; 
-    height:40%;
-    margin:auto;
-    margin:auto 2em;
-    position:relative;
+    margin:auto 1em;
+    width:70%;
 }
 
 .p1:hover + .preview-project1,
@@ -433,7 +431,8 @@ span{
     overflow-x:auto;
     -webkit-overflow-scrolling: touch;
     position:absolute;
-    padding:2em;
+    /* padding:1em; */
+    height:90vh;
 }
 
 .single-project::-webkit-scrollbar {
@@ -443,11 +442,10 @@ span{
 .single-project .secondary{
     margin:1em;
     text-align:left;
-    height:60vh;
     display: flex;
     align-items: center;
-    border-radius:1em;
-    background-color: rgb(238, 238, 238);
+    border-radius:2em;
+    background-color:#fafafa;
     border:0;
     color: rgb(175, 175, 175);
 }
@@ -674,6 +672,12 @@ footer{
     justify-content: space-between;
 }
 
+.fotos-container{
+    left:32%;
+    position:relative;
+    height:90vh;
+}
+
 .footer-content ul{
     padding:0;
 }
@@ -835,10 +839,6 @@ ul li {
         text-align:center;
     }
 
-    .fotos-container{
-        display:block;
-        left:0;
-    }
 
     .footer-content{
         flex-direction: column-reverse;
@@ -917,9 +917,9 @@ ul li {
     }
 
     .projects{
-        margin:0;
+
         padding:1em;
-        width:90vw;
+        width:50vw;
     }
 
     .preview-project1,

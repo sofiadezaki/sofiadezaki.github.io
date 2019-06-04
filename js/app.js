@@ -30,14 +30,17 @@
 // $('.menu').on('click', function() {
 //     $('.navigation').toggle();
 // })
+
+
 AOS.init({
     duration: 1200,
   })
 
+
 $('document').ready(function(){
 
     console.log('ready');
-
+    
     $(window).scroll(function(){
         if($(window).scrollTop()<20){
             $('.text-scroll').stop(true,true).fadeIn('slow');
@@ -46,37 +49,33 @@ $('document').ready(function(){
       }
    });
 
-    $('.about').on('click', function(){
+
+// Smooth scroll
+
+    $('#about-b').on('click', function(){
         $('html').animate({
             scrollTop: $('#about').offset().top -100
         }, 1000);
+        $('#cv').hide('cv-open');
     })
+
 
     $('#cv-b').on('click', function(){
         $('html').animate({
-            scrollTop: $('#about').offset().top -100
+            scrollTop: $('#about').offset().top -200
         }, 1000);
+        $('#cv').show('cv-open');
     });
+
+// Botones seccion
 
     $('#button-cv').on('click', function() {
         $('#cv').show('cv-open');
-
     });
-
-    $('#cv-b').on('click', function() {
-        $('#cv').show('cv-open');
-
-    });
-
 
     $('#button-about').on('click', function() {
         $('#cv').hide('cv-open');
     });
-
-    $('.about').on('click', function() {
-        $('#cv').hide('cv-open');
-    });
-
 
 })
 
