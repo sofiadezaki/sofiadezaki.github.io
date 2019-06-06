@@ -201,18 +201,11 @@ span{
     opacity: 0;
     pointer-events: none;
     transition: opacity .2s ease-in-out;
-    z-index:0;
+    z-index:-1;
+    top:30%;
+    right:10%;
 }
 
-.img-lettering{
-    top:30%;
-    right:30%;
-}
-
-.img-ux{
-    top:30%;
-    right:1%;
-}
 
 
 .info-container{
