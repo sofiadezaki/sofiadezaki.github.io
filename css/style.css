@@ -363,13 +363,13 @@ hr{
 }
 
 .over-emoji{
-    width:20%;
+    width:16%;
     position: absolute;
-    top:-2em;
+    top:0;
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s ease-in-out;
-    z-index:0;
+    z-index:2;
 }
 
 .emoji:hover + .over-emoji{
@@ -1220,7 +1220,11 @@ ul li {
 
     .imagen {
         top:-1em;
-        margin-left:0;
+        margin-left:4em;
+    }
+
+    .preview-thumb{
+        width:70%;
     }
 
 
@@ -1279,6 +1283,7 @@ ul li {
 
     .info-container{
         width:90%;
+        top:2em;
     }
 
 
