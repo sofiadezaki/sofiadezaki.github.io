@@ -30,52 +30,81 @@
 // $('.menu').on('click', function() {
 //     $('.navigation').toggle();
 // })
-
-
 AOS.init({
     duration: 1200,
   })
 
-
+  
 $('document').ready(function(){
 
     console.log('ready');
-    
+
     $(window).scroll(function(){
         if($(window).scrollTop()<20){
             $('.text-scroll').stop(true,true).fadeIn('slow');
       } else {
             $('.text-scroll').stop(true,true).fadeOut('slow');
       }
-   });
+    });
 
 
-// Smooth scroll
 
-    $('#about-b').on('click', function(){
+    $('#services-b').on('click', function(){
         $('html').animate({
-            scrollTop: $('#about').offset().top -100
+            scrollTop: $('.services').offset().top 
         }, 1000);
-        $('#cv').hide('cv-open');
-    })
+    });
 
 
     $('#cv-b').on('click', function(){
         $('html').animate({
-            scrollTop: $('#about').offset().top -200
+            scrollTop: $('.cv-container').offset().top -300
         }, 1000);
-        $('#cv').show('cv-open');
     });
 
-// Botones seccion
+
+    $('#about-b').on('click', function(){
+        $('html').animate({
+            scrollTop: $('.slider-about').offset().top -260
+        }, 1000);
+    });
+
+    $('#about-b').on('click', function() {
+        $('#cv').hide('cv-hide');
+    });
+
+
 
     $('#button-cv').on('click', function() {
         $('#cv').show('cv-open');
     });
 
-    $('#button-about').on('click', function() {
-        $('#cv').hide('cv-open');
+
+    $('#cv-b').on('click', function() {
+        $('#cv').show('cv-open');
+
     });
+
+
+    $('#button-about').on('click', function() {
+        $('#cv').hide('cv-hide');
+    });
+
+
+    $('#open-menu').on('click', function(){
+        $('.navigation').toggleClass('expand');
+        return false;
+      });
+
+
+
+
+    $('#menu-b').on('click', function() {
+        $('.navigation').show('nav-open');
+        $('#menu-b').hide('nav-hide');
+        $('#close-b').show('close-show');
+    });
+    
 
 })
 
