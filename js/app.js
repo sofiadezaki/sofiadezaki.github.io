@@ -104,7 +104,46 @@ $('document').ready(function(){
         $('#menu-b').hide('nav-hide');
         $('#close-b').show('close-show');
     });
-    
+
+
+    $(function() {
+        $("#cosmic-gif").hover(
+            function() {
+                $(this).attr("src", "img/projects/cosmic-horoscopes.gif");
+            },
+            function() {
+                $(this).attr("src", "img/projects/cosmic-horoscopes.jpg");
+            }                         
+        );      
+        
+        $("#roca-gif").hover(
+            function() {
+                $(this).attr("src", "img/projects/roca.gif");
+            },
+            function() {
+                $(this).attr("src", "img/projects/roca-02.jpg");
+            }                         
+        );  
+
+        $("#36days-gif").hover(
+            function() {
+                $(this).attr("src", "img/projects/36days-2017.gif");
+            },
+            function() {
+                $(this).attr("src", "img/projects/36days-01.jpg");
+            }                         
+        ); 
+        
+        $("#36days-2018-gif").hover(
+            function() {
+                $(this).attr("src", "img/projects/36days-2018.gif");
+            },
+            function() {
+                $(this).attr("src", "img/projects/36days-2018.jpg");
+            }                         
+        ); 
+    });
+
 
 })
 

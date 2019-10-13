@@ -13,11 +13,13 @@ html, body {
     color: #0F1636;
     cursor:s-resize;
 } 
-
+/* 
 main{
-    min-height: 100vh; /* will cover the 100% of viewport */
+    min-height: 100vh;
     overflow: hidden;
-}
+} */
+
+
 
 
 .logo, .logo-footer{
@@ -363,9 +365,9 @@ hr{
 }
 
 .over-emoji{
-    width:16%;
+    width:18%;
     position: absolute;
-    top:0;
+    top:-1em;
     opacity: 0;
     pointer-events: none;
     transition: opacity .3s ease-in-out;
@@ -391,6 +393,7 @@ hr{
 .projects{
     /* width:100vw; */
     z-index:0;
+    padding:1em;
 }
 
 .imagen{
@@ -593,6 +596,7 @@ hr{
 
 .cv-col{
     padding:0;
+    margin:0 0 1em 0;
 }
 
 
@@ -803,6 +807,7 @@ ul li {
 }
 
 
+
 .services-container{
     width:100vw;
 }
@@ -815,16 +820,19 @@ ul li {
 
 .single-project{
     overflow-y:scroll;
-    overflow-x:auto;
+    overflow-x:visible;
     -webkit-overflow-scrolling: touch;
     position:absolute;
-
 }
 
 .single-project::-webkit-scrollbar {
     display: none;
 }
 
+
+.preset-gif{
+    cursor:wait;
+}
 
 
 .next{
@@ -990,7 +998,7 @@ ul li {
     }
 
     .wrapper{
-        max-width:100vw;
+        max-width:90vw;
         padding:.5em 1em;
     }
 
@@ -1133,7 +1141,7 @@ ul li {
 
     .cv-container{
         height:auto;
-        top:32em;
+        top:21em;
     }
 
     .cv-content{
@@ -1210,7 +1218,9 @@ ul li {
     }
 
     .next{
-        border-radius: 6em;
+        padding:1em;
+        right:2em;
+        position: absolute;
     }
 
     .projects{
