@@ -97,8 +97,6 @@ $('document').ready(function(){
       });
 
 
-
-
     $('#menu-b').on('click', function() {
         $('.navigation').show('nav-open');
         $('#menu-b').hide('nav-hide');
@@ -143,6 +141,19 @@ $('document').ready(function(){
             }                         
         ); 
     });
+
+
+    $(function() {
+
+        $(".pagina-proyectos").mousewheel(function(event, delta) {
+     
+           this.scrollLeft -= (delta * 30);
+         
+           event.preventDefault();
+     
+        });
+     
+     });
 
 
 })
